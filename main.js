@@ -2,25 +2,18 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // Then, write and example of using the function.
 
-//function max(num1, num2){
-//  let max = 0;
-//  if (num1 >= num2){
-//    max = num1;
-//  }
-//  else if (num2 >= num1){
-//    max = num2;
-//  }
-//return max;
-
-//}
-
-//console.log(max);
-
-//console.log( _.max([1,2,3,4]) );
-
-let array = [1, 2];
-let largest = Math.max.apply(Math, array);
-console.log(largest);
+function max(num1, num2){
+	  if (num1 === num2){
+	    return "Numbers are equal"
+	  } else if (num1 > num2){
+	    return num1
+	  } else if (num2 > num1){
+	    return num2
+	  } else {
+	    return "Numbers are Invalid"
+	  }
+	}
+	 console.log(max(4, 5));
 
 
 
@@ -28,25 +21,10 @@ console.log(largest);
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // Then, write and example of using the function.
 
-//function maxOfThree(num1, num2, num3){
-//    let max = 0;
-//    if((num1 >= num2) && (num1 >= num3)){
-//      max = num1;
-//    }
-//    else if((num2 >= num1) && (num2 >= num3)){
-//      max = num2;
-//    }
-//    else{
-//      max = num3;
-//    }
-//return max;
-//}
-//console.log(maxOfThree);
-
-//let array = [1, 2, 3];
-//let largest = Math.max.apply(Math, array);
-//console.log(largest);
-
+function maxOfThree(num1, num2, num3){
+	  return "The largest of the three numbers is " + Math.max(num1, num2, num3);
+	}
+	 console.log(maxOfThree(6, 8, 2));
 
 
 
@@ -89,7 +67,10 @@ console.log(sum);
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
-
+function maxOfThree(num1, num2, num3){
+	  return "The largest of the three numbers is " + Math.max(num1, num2, num3);
+	}
+	 console.log(maxOfThree(6, 8, 2));
 
 
 // 6.
@@ -113,6 +94,18 @@ console.log(str.length);
 //    return false;
 //}
 //console.log(greaterThan);
+function greaterThan(num1, num2){
+	  if (num1 === num2){
+	    return "Numbers are equal"
+	  } else if (num1, num2){
+	    return "The greatest parameter is " + Math.max(num1, num2);
+	  } else {
+	    return "Numbers are Invalid"
+	  }
+	}
+	 console.log(greaterThan(7, 9));
+
+
 
 // 8.
 // Write a function called `greet` that takes a
@@ -143,3 +136,11 @@ console.log(greeting + " " + name);
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+function madlib(word1, word2, word3, word4){
+	  if (arguments.length !== 4){
+	    return "Please use exactly 4 words in '' quotes"
+	  } else {
+	    return "Today I saw " + word1 + " go to the " + word2 + " to find some " + word3 + " so she can " + word4 + "."
+	  }
+	}
+	 console.log(madlib("Cindy", "market", "paper", "draw"));
